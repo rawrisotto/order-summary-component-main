@@ -76,7 +76,7 @@ h6 {
 body {
   background: url("./images/pattern-background-mobile.svg") no-repeat;
   background-color: var(--clr-paleBlue);
-  background-size: cover;
+  background-size: 100%;
   font-family: var(--ff-base);
   min-height: 100vh;
   display: flex;

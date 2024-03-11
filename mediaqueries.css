@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+  body {
+    background: url("./images/pattern-background-desktop.svg") no-repeat;
+    background-size: 100%;
+    background-color: var(--clr-paleBlue);
+  }
+  
+  .order-summary-section {
+    max-width: 450px;
+    padding: 3rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .plan-section {
+    padding: 1.75rem;
+  }
+
+  .plan-title {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin-top: 0.5rem;
+  }
+}
