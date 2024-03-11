@@ -60,6 +60,7 @@ h6 {
 :root {
   --clr-paleBlue: hsl(225, 100%, 94%);
   --clr-brightBlue: hsl(245, 75%, 52%);
+  --clr-brightBlue-60: hsl(245, 75%, 52%, 60%);
   --clr-veryPaleBlue: hsl(225, 100%, 98%);
   --clr-desaturatedBlue: hsl(224, 23%, 55%);
   --clr-darkBlue: hsl(223, 47%, 23%);
@@ -132,13 +133,23 @@ body {
   color: var(--clr-brightBlue);
 }
 
+.change-link:hover {
+  color: var(--clr-brightBlue-60);
+}
+
 .btn {
   background: var(--clr-brightBlue);
   color: var(--clr-white);
   padding: 1rem 0;
   border-radius: 0.75rem;
+  border: none;
   font-weight: var(--fw-700); 
   box-shadow: 0 20px 20px var(--clr-paleBlue);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr-brightBlue-60)
 }
 
 .cancel-link {
@@ -146,4 +157,8 @@ body {
   font-weight: var(--fw-700);
   color: var(--clr-desaturatedBlue);
   margin-top: 0.5rem;
+}
+
+.cancel-link:hover {
+  color: var(--clr-darkBlue);
 }
