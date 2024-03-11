@@ -1,0 +1,149 @@
+/* CSS RESET */
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-paleBlue: hsl(225, 100%, 94%);
+  --clr-brightBlue: hsl(245, 75%, 52%);
+  --clr-veryPaleBlue: hsl(225, 100%, 98%);
+  --clr-desaturatedBlue: hsl(224, 23%, 55%);
+  --clr-darkBlue: hsl(223, 47%, 23%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-base: "Red Hat Display", sans-serif;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+}
+
+/* General Styling */
+body {
+  background: url("./images/pattern-background-mobile.svg") no-repeat;
+  background-color: var(--clr-paleBlue);
+  background-size: cover;
+  font-family: var(--ff-base);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Order Summary Styling */
+.order-summary-article {
+  margin: 1.5rem;
+  background: var(--clr-white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.order-summary-section {
+  padding: 1.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.375rem;
+  font-weight: var(--fw-900)
+}
+
+.description {
+  font-weight: var(--fw-500);
+  color: var(--clr-desaturatedBlue);
+}
+
+.plan-section {
+  display: flex;
+  align-items: center;
+  background: var(--clr-veryPaleBlue);
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.plan-wrapper {
+  margin-left: 1rem;
+}
+
+.plan-title {
+  font-size: 1rem;
+}
+
+.change-link {
+  margin-left: auto;
+  font-size: 0.825rem;
+  font-weight: var(--fw-700);
+  color: var(--clr-brightBlue);
+}
+
+.btn {
+  background: var(--clr-brightBlue);
+  color: var(--clr-white);
+  padding: 1rem 0;
+  border-radius: 0.75rem;
+  font-weight: var(--fw-700); 
+  box-shadow: 0 20px 20px var(--clr-paleBlue);
+}
+
+.cancel-link {
+  text-decoration: none;
+  font-weight: var(--fw-700);
+  color: var(--clr-desaturatedBlue);
+  margin-top: 0.5rem;
+}
